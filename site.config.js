@@ -11,6 +11,10 @@ const CONFIG = {
     instagram: "",
   },
   projects: [
+    {
+      name: `Portfolio`,
+      href: "https://my.surfit.io/w/1103843433",
+    },
   ],
   // blog setting (required)
   blog: {
