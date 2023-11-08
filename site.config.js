@@ -13,7 +13,7 @@ const CONFIG = {
   projects: [
     {
       name: `Portfolio`,
-      href: "https://my.surfit.io/w/1103843433",
+      href: "https://taein.vercel.app",
     },
   ],
   // blog setting (required)
@@ -23,9 +23,9 @@ const CONFIG = {
   },
 
   // CONFIG configration (required)
-  link: "https://taein.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  link: "https://taein-blog.vercel.app",
+  since: 2018, // If leave this empty, current year will be used.
+  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
