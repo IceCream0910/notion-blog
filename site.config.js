@@ -13,7 +13,7 @@ const CONFIG = {
   projects: [
     {
       name: `Portfolio`,
-      href: "https://taein.vercel.app",
+      href: "https://yuntae.in",
     },
   ],
   // blog setting (required)
