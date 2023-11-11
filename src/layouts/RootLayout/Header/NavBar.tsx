@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 import Link from "next/link"
 
 const NavBar: React.FC = () => {
-  const links = [{ id: 1, name: "Portfolio", to: "https://yuntae.in" }]
+  const links = [{ id: 1, name: "About", to: "https://yuntae.in" }]
   return (
     <StyledWrapper className="">
       <ul>
