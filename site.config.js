@@ -12,7 +12,7 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `Portfolio`,
+      name: `About`,
       href: "https://yuntae.in",
     },
   ],
