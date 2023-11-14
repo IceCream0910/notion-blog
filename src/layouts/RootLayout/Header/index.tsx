@@ -29,8 +29,9 @@ const StyledWrapper = styled.div`
   position: sticky;
   top: 0;
   margin-bottom: 0.5rem;
-  background-color: ${({ theme }) => theme.colors.gray2};
+  background-color: rgba(0, 0, 0, 0.2)
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     margin-bottom: 1.5rem;

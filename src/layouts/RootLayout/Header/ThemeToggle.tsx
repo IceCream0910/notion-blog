@@ -14,7 +14,7 @@ const ThemeToggle: React.FC<Props> = () => {
 
   return (
     <StyledWrapper onClick={handleClick}>
-      <Emoji>{scheme === "light" ? "☀️" : "🌙"}</Emoji>
+      <Emoji>{scheme === "light" ? <span style={{ marginTop: '-10px' }}>☀️</span> : <span style={{ paddingBottom: '15px' }}>🌙</span>}</Emoji>
     </StyledWrapper>
   )
 }

@@ -65,21 +65,28 @@ const StyledWrapper = styled(Link)`
   article {
     overflow: hidden;
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
     background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.gray4};
+    theme.scheme === "light" ? "white" : theme.colors.gray4};
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
+    transition: transform 0.3s ease-in-out;
 
     @media (min-width: 768px) {
       margin-bottom: 2rem;
     }
 
+    :focus {
+      -webkit-tap-highlight-color : transparent;
+      outline: none;
+    }
+
     :hover {
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transform: translateY(-3px);
     }
     > .category {
       position: absolute;

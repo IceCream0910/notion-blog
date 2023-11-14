@@ -4,8 +4,8 @@ const CONFIG = {
     name: "윤태인",
     image: "/44636839-removebg-preview.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "",
-    bio: "새로움에 끊임없이 도전하는 고등학생 개발자입니다.",
-    email: "icecream2370@kakao.com",
+    bio: "새로움에 끊임없이 도전하는 개발자입니다.",
+    email: "hey@yuntae.in",
     linkedin: "",
     github: "icecream0910",
     instagram: "",
@@ -19,7 +19,7 @@ const CONFIG = {
   // blog setting (required)
   blog: {
     title: "태인의 Blog",
-    description: "개발자를 꿈꾸는 태인의 Blog",
+    description: "새로움에 끊임없이 도전하는 태인의 Blog",
   },
 
   // CONFIG configration (required)
