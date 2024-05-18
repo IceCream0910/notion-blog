@@ -22,6 +22,7 @@ export const Global = () => {
         * {
           color-scheme: ${theme.scheme};
           box-sizing: border-box;
+          -webkit-tap-highlight-color : transparent;
         }
 
         h1,

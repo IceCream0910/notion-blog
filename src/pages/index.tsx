@@ -1,4 +1,3 @@
-import Feed from "src/routes/Feed"
 import { CONFIG } from "../../site.config"
 import { NextPageWithLayout } from "../types"
 import { getPosts } from "../apis"
@@ -8,6 +7,13 @@ import { queryKey } from "src/constants/queryKey"
 import { GetStaticProps } from "next"
 import { dehydrate } from "@tanstack/react-query"
 import { filterPosts } from "src/libs/utils/notion"
+import dynamic from 'next/dynamic';
+import { useEffect } from "react";
+
+const Feed = dynamic(() => import('src/routes/Feed'), {
+  loading: () => <p>Loading...</p>,
+  ssr: false
+});
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = filterPosts(await getPosts())

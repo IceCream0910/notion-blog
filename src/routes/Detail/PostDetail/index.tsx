@@ -48,5 +48,6 @@ const StyledWrapper = styled.div`
   max-width: 100%;
   > article {
     max-width: 100%;
+    
   }
 `

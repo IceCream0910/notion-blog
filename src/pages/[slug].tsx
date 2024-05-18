@@ -1,4 +1,3 @@
-import Detail from "src/routes/Detail"
 import { filterPosts } from "src/libs/utils/notion"
 import { CONFIG } from "site.config"
 import { NextPageWithLayout } from "../types"
@@ -11,6 +10,12 @@ import { queryKey } from "src/constants/queryKey"
 import { dehydrate } from "@tanstack/react-query"
 import usePostQuery from "src/hooks/usePostQuery"
 import { FilterPostsOptions } from "src/libs/utils/notion/filterPosts"
+import dynamic from 'next/dynamic';
+
+const Detail = dynamic(() => import("src/routes/Detail"), {
+  loading: () => <p>Loading...</p>,
+  ssr: false
+});
 
 const filter: FilterPostsOptions = {
   acceptStatus: ["Public", "PublicOnDetail"],
