@@ -1,6 +1,6 @@
 import useDropdown from "src/hooks/useDropdown"
 import { useRouter } from "next/router"
-import React from "react"
+import React, { useEffect } from "react"
 import { MdExpandMore } from "react-icons/md"
 import { DEFAULT_CATEGORY } from "src/constants"
 import styled from "@emotion/styled"
@@ -23,10 +23,11 @@ const CategorySelect: React.FC<Props> = () => {
       },
     })
   }
+
   return (
     <StyledWrapper>
       <div ref={dropdownRef} className="wrapper" onClick={handleOpen}>
-        {currentCategory} 글 <MdExpandMore />
+        {currentCategory} <MdExpandMore />
       </div>
       {opened && (
         <div className="content">
