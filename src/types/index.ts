@@ -32,7 +32,8 @@ export type TPost = {
   status: TPostStatus[]
   createdTime: string
   fullWidth: boolean
-  thumbnail?: string
+  thumbnail?: string,
+  recordMap?: ExtendedRecordMap
 }
 
 export type PostDetail = TPost & {
